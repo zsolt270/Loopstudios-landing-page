@@ -20,7 +20,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Live Site URL: [Add live site URL here]((https://zsolt270.github.io/Loopstudios-landing-page/))
+- Live Site URL: [Add live site URL here](https://zsolt270.github.io/Loopstudios-landing-page/)
 
 ### Screenshot
 
