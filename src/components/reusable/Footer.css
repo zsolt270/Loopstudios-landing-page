@@ -1,0 +1,42 @@
+.col p {
+	margin-bottom: 0px !important;
+}
+.socials img:hover {
+	cursor: pointer;
+	border-bottom: 1px solid white;
+}
+
+.footerMenu div:hover p::before {
+	content: "";
+	cursor: pointer;
+	background-color: white;
+	width: 25%;
+	height: 5%;
+	bottom: 12px;
+	position: absolute;
+}
+.footerMenu div:nth-child(1):hover p::before {
+	left: 22px;
+}
+.footerMenu div:nth-child(2):hover p::before {
+	left: 25px;
+}
+.footerMenu div:nth-child(3):hover p::before {
+	left: 22px;
+}
+.footerMenu div:nth-child(4):hover p::before {
+	left: 33px;
+}
+.footerMenu div:nth-child(5):hover p::before {
+	left: 30px;
+}
+
+.bi-c-circle {
+	font-size: 12px;
+	margin-top: 2.6px;
+}
+@media screen and (max-width: 991px) {
+	.footerMenu div:hover p::before {
+		display: none;
+	}
+}

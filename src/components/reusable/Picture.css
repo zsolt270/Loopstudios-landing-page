@@ -1,0 +1,100 @@
+.titles {
+	color: white;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 4.7rem;
+	font-weight: 300;
+	font-family: "Josefin Sans", sans-serif;
+	z-index: 2;
+	opacity: 0.8;
+	text-align: left !important;
+}
+div .position-relative img {
+	z-index: -1;
+}
+div .pic::before {
+	content: "";
+	background-image: repeating-linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.6)
+	);
+	opacity: 1;
+	position: absolute;
+	width: 77.5%;
+	height: 100%;
+	bottom: 0px;
+	z-index: 1;
+}
+div .position-relative:hover img {
+	opacity: 0.5;
+}
+div .position-relative:hover {
+	cursor: pointer;
+}
+div .position-relative:hover .titles {
+	color: black;
+	opacity: 1;
+}
+div .position-relative:hover::before {
+	content: unset;
+}
+@media screen and (max-width: 1399px) {
+	div .pic::before {
+		width: 90%;
+	}
+	.titles {
+		bottom: 1.5rem;
+		left: 3.3rem;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.titles {
+		bottom: 0.98rem;
+		left: 2.8rem;
+	}
+}
+@media screen and (max-width: 991px) {
+	div .pic::before {
+		background-image: repeating-linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.6)
+		);
+		width: 77.5%;
+	}
+	.titles {
+		bottom: 0.5rem;
+		left: 2rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	.titles {
+		font-size: 2rem;
+		bottom: 2rem;
+		left: 3.2rem;
+	}
+}
+@media screen and (max-width: 575px) {
+	.titles {
+		bottom: 18%;
+		left: 9%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.titles {
+		bottom: 10%;
+	}
+}
+@media screen and (max-width: 390px) {
+	div .pic::before {
+		background-image: repeating-linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.6)
+		);
+		width: 91%;
+	}
+	.titles {
+		bottom: 0%;
+	}
+}
